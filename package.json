@@ -16,7 +16,7 @@
 		"prepare": "husky install",
 		"test": "jest --watch",
     	"test:ci": "jest --ci",
-		"test:staged": "yarn test --bail --findRelatedTests"
+		"test:staged": "yarn test --bail --findRelatedTests --watch=false"
 	},
 	"dependencies": {
 		"next": "latest",
