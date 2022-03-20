@@ -1,7 +1,7 @@
 {
 	"name": "next-with-teplscch",
 	"version": "1.0.0",
-	"description": "Next.js example with typescript, eslint, prettier, lint-staged, commitlint, commitizen and husky",
+	"description": "Next.js example with typescript, eslint, prettier, lint-staged, commitlint, commitizen, husky, jest and testing-library",
 	"main": "index.js",
 	"author": "Thiago Nascimento <thiag.g3@gmail.com>",
 	"license": "MIT",
@@ -13,7 +13,9 @@
 		"type-check": "tsc",
 		"commit": "git-cz",
 		"lint-staged": "lint-staged",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"test": "jest --watch",
+    	"test:ci": "jest --ci"
 	},
 	"dependencies": {
 		"next": "latest",
@@ -23,6 +25,8 @@
 	"devDependencies": {
 		"@commitlint/cli": "^16.2.3",
 		"@commitlint/config-conventional": "^16.2.1",
+		"@testing-library/jest-dom": "^5.16.2",
+		"@testing-library/react": "^12.1.4",
 		"@types/node": "^17.0.21",
 		"@types/react": "^17.0.41",
 		"@types/react-dom": "^17.0.14",
@@ -40,6 +44,7 @@
 		"eslint-plugin-react": "^7.28.0",
 		"eslint-plugin-react-hooks": "^4.3.0",
 		"husky": "^7.0.4",
+		"jest": "^27.5.1",
 		"lint-staged": "^12.3.7",
 		"prettier": "^2.6.0",
 		"typescript": "4.0"
